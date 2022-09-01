@@ -1,0 +1,27 @@
+---
+export interface Props {
+	letter: string;
+	emoji: string;
+	word: string;
+}
+
+const { letter, emoji, word } = Astro.props;
+---
+
+<section>
+  <h1>{ `${letter}${letter.toLowerCase()}` }</h1>
+  <figure>
+    {emoji}
+  </figure>
+  <p>
+    {word}
+  </p>
+</section>
+
+<style>
+  section {
+    background-color: #494B7A;
+    width: 100vw;
+    height: 100vh;
+  }
+</style>
