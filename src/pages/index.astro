@@ -6,9 +6,19 @@ import Card from '../components/Card.astro';
 <Layout title="Welcome to Astro.">
 	<main>
 			<Card
-				letter="A"
+				letter="a"
 				emoji="🍎"
 				word="apple"
+			/>
+			<Card
+				letter="b"
+				emoji="🐝"
+				word="bee"
+			/>
+			<Card
+				letter="c"
+				emoji="🐈"
+				word="cat"
 			/>
 	</main>
 </Layout>
@@ -24,8 +34,7 @@ import Card from '../components/Card.astro';
 
 	main {
 		margin: auto;
-		padding: 1em;
-		max-width: 60ch;
+		padding: 0;
 	}
 
 	.text-gradient {

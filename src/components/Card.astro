@@ -9,7 +9,7 @@ const { letter, emoji, word } = Astro.props;
 ---
 
 <section>
-  <h1>{ `${letter}${letter.toLowerCase()}` }</h1>
+  <h1>{ `${letter.repeat(2)}` }</h1>
   <figure>
     {emoji}
   </figure>
@@ -23,5 +23,25 @@ const { letter, emoji, word } = Astro.props;
     background-color: #494B7A;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    text-transform: capitalize;
+    font-size: 120px;
+    margin: 0;
+  }
+
+  figure {
+    font-size: 180px;
+    display: flex;
+    margin: 0;
+  }
+
+  p {
+    font-size: 48px;
   }
 </style>
