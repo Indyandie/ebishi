@@ -1,0 +1,17 @@
+{
+  "a": [ 
+    { "emoji": "🍎", "word": "apple" }
+  ],
+  "b": [ 
+    { "emoji": "🦜", "word": "bird" }
+  ],
+  "c": [ 
+    { "emoji": "🌵", "word": "cactus" }
+  ],
+  "d": [ 
+    { "emoji": "🥟", "word": "dumplin" }
+  ],
+  "e": [ 
+    { "emoji": "👂🏾", "word": "ear" }
+  ]
+}
