@@ -1,15 +1,17 @@
 ---
 export interface Props {
-	letter: string;
-	emoji: string;
-	word: string;
+	letter: object;
 }
 
-const { letter, emoji, word } = Astro.props;
+const { letter } = Astro.props;
+const emoji = letter.emoji
+const word = letter.word
+const char = word[0]
+
 ---
 
 <section>
-  <h1>{ `${letter.repeat(2)}` }</h1>
+  <h1>{ `${char.repeat(2)}` }</h1>
   <figure>
     {emoji}
   </figure>
