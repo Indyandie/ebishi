@@ -1,79 +1,63 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
-import data from '../data//abc-emoji-list.json';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import data from "../data//abc-emoji-list.json";
 const abc = JSON.parse(JSON.stringify(data));
 ---
 
+<script>
+  let card = document.querySelector("#index-card")
+  let touchstartX = 0;
+  let touchendX = 0;
+  let tcDiff = 0
+  let touchcurr
+  let info;
+
+  function checkDirection() {
+    let tcDiff = touchstartX - touchendX;
+    // if (touchendX < touchstartX) console.log("swiped left!", tcDiff);
+    // if (touchendX > touchstartX) console.log("swiped right!", tcDiff);
+    card.setAttribute("style", `transition: all 400ms ease-in; margin-left: 0`)
+  }
+
+  function updateTouchStart (e) {
+    touchstartX = e.changedTouches[0].screenX;
+    info = e.changedTouches[0]
+  }
+
+  function moveCard (e) {
+    touchcurr = e.changedTouches[0].screenX
+    tcDiff = (touchstartX - touchcurr) * -1;
+    card.setAttribute("style", `transition: unset; margin-left: ${tcDiff}px`)
+  }
+
+  card.addEventListener("touchstart", updateTouchStart, { passive: true });
+  
+  card.addEventListener('touchmove', moveCard, { passive: true } )
+
+  card.addEventListener("touchend", (e) => {
+    touchendX = e.changedTouches[0].screenX;
+    checkDirection();
+  });
+</script>
+
 <Layout title="abc">
-	<main>
-    {Object.keys(abc).map((name, i) => 
-      <Card
-        letter={ abc[name][0]}
-      />
-    )}
-	</main>
+  <main>
+    <!-- {Object.keys(abc).map((name) => <Card letter={abc[name][0]} />)} -->
+    <Card letter={abc.a[0]} />
+  </main>
 </Layout>
 
 <style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
+  h1 {
+    margin: 2rem 0;
+  }
 
-	h1 {
-		margin: 2rem 0;
-	}
-
-	main {
-		margin: auto;
-		padding: 0;
+  main {
+    margin: auto;
+    padding: 0;
     display: flex;
     width: min-content;
     touch-action: none;
-    touch-action: pan-x;
-	}
-
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%,
-		100% {
-			background-position-y: 0%;
-		}
-		50% {
-			background-position-y: 80%;
-		}
-	}
-
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4f39fa;
-		padding: 1rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  }
 </style>

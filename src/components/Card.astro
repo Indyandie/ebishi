@@ -9,7 +9,7 @@ const word = letter.word
 const char = word[0]
 ---
 
-<section>
+<section id="index-card">
   <h1>{ `${char.repeat(2)}` }</h1>
   <figure>
     {emoji}
@@ -29,6 +29,15 @@ const char = word[0]
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    touch-action: pan-x;
+    /* animation: test 2500ms ease-in infinite; */
+    
+  }
+
+  @-webkit-keyframes test {
+    50% {
+      margin-left: 0;
+    }
   }
 
   h1 {
