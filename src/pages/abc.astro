@@ -5,57 +5,10 @@ import data from "../data//abc-emoji-list.json";
 const abc = JSON.parse(JSON.stringify(data));
 ---
 
-<script>
-    
-  let card = document.querySelector("#index-card")
-  let touchstartX = 0;
-  let touchendX = 0;
-  let tcDiff = 0
-  let tcCurr
-  let tcMoveStart
-  let info;
-
-
-  function updateTouchStart (e) {
-    touchstartX = e.changedTouches[0].screenX
-    tcMoveStart = e.changedTouches[0].screenX
-    info = e.changedTouches[0]
-  }
-
-  function moveCard (e) {
-    tcCurr = e.changedTouches[0].screenX
-    let tcMoveDiff = (tcMoveStart - tcCurr)
-    // card.setAttribute("style", `transition: unset; margin-left: ${tcDiff}px`)
-    document.body.scrollBy(tcMoveDiff, 0)
-    tcMoveStart = tcCurr
-  }
-
-  const endTouch = e => {
-    touchendX = e.changedTouches[0].screenX
-    checkDirection()
-  }
-
-  function checkDirection() {
-    let tcDiff = touchstartX - touchendX;
-    // if (touchendX < touchstartX) console.log("swiped left!", tcDiff);
-    // if (touchendX > touchstartX) console.log("swiped right!", tcDiff);
-    // card.setAttribute("style", `transition: all 400ms ease-in; margin-left: 0`)
-
-    document.body.scrollTo(window.innerWidth, 0)
-    // card.scrollIntoView()
-    // console.log('scroll to')
-  }
-
-  card.addEventListener("touchstart", updateTouchStart, { passive: true });
-  
-  card.addEventListener('touchmove', moveCard, { passive: true } )
-
-  card.addEventListener("touchend", endTouch)
-</script>
 
 <Layout title="abc">
   <main>
-    {Object.keys(abc).map((name) => <Card letter={abc[name][0]} />)}
+    {Object.keys(abc).map((name, i) => <Card letter={abc[name][0]} index={i} />)}
     <!-- <Card letter={abc.a[0]} /> -->
   </main>
 </Layout>

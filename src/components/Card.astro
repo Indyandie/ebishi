@@ -5,7 +5,75 @@ const word = letter.word
 const char = word[0]
 ---
 
-<section id="index-card">
+<script>
+  const cards = document.querySelectorAll('.swipe-card')
+
+  const cardSwipe = (card, index)  => {
+    let touchstartX
+    let touchendX
+    let tcDiff = 0
+    let tcCurr
+    let tcMoveStart
+    // let scrollCurr = document.body.scrollLeft
+    let scrollCurr = window.innerWidth * index 
+
+    card.addEventListener("touchstart", updateTouchStart, { passive: true });
+
+    function updateTouchStart (e) {
+      touchstartX = e.changedTouches[0].screenX
+      tcMoveStart = touchstartX
+
+      document.body.setAttribute("style", `scroll-behavior: unset;`)
+
+      card.addEventListener('touchmove', moveCard, { passive: true } )
+
+      card.addEventListener("touchend", endTouch)
+    }
+
+    const moveCard = e => {
+      tcCurr = e.changedTouches[0].screenX
+      let tcMoveDiff = (tcMoveStart - tcCurr)
+      // card.setAttribute("style", `transition: unset; margin-left: ${tcDiff}px`)
+      document.body.scrollBy(tcMoveDiff, 0)
+      tcMoveStart = tcCurr
+    }
+
+    const endTouch = e => {
+      touchendX = e.changedTouches[0].screenX
+      checkDirection()
+
+      card.removeEventListener('touchmove', moveCard, { passive: true } )
+    }
+
+    const  checkDirection = () => {
+      tcDiff = touchstartX - touchendX;
+      document.body.setAttribute("style", `scroll-behavior: smooth;`)
+
+      // swipe left
+      if (tcDiff < 0) {
+        let lScroll = scrollCurr - window.innerWidth
+        document.body.scrollTo(lScroll, 0)
+      }
+
+      // swipe right
+      if (tcDiff > 0) {
+        let rScroll = window.innerWidth + scrollCurr
+        document.body.scrollTo(rScroll, 0)
+      } 
+
+      // card.scrollIntoView()
+
+      card.removeEventListener("touchend", endTouch)
+    }
+
+  }
+
+  cards.forEach((crd, i) => {
+    cardSwipe(crd, i)
+  })
+</script>
+
+<section class="swipe-card">
   <h1>{ `${char.repeat(2)}` }</h1>
   <figure>
     {emoji}
