@@ -70,7 +70,8 @@
           document.body.scrollTo(rScroll, 0)
         }
       } else {
-        card.scrollIntoView()
+        // card.scrollIntoView()
+        document.body.scrollTo(scrollCurr, 0)
       }
 
       card.removeEventListener("touchend", endTouch)
@@ -80,7 +81,7 @@
   updateLetter(letter[index])
 </script>
 
-<section on:touchstart|self={swipeCard}>
+<section on:touchstart|self|passive={swipeCard}>
   <h1>{char.repeat(2)}</h1>
   <figure on:click={toggleIndex}>{emoji}</figure>
   <p>{word}</p>
@@ -97,6 +98,8 @@
     justify-content: center;
     align-items: center;
     user-select: none;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;
     touch-action: pan-x;
     transition: all 2s ease;
   }
