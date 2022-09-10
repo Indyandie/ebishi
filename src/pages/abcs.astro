@@ -8,7 +8,11 @@ const abc = JSON.parse(JSON.stringify(data));
 
 <Layout title="abc">
   <main>
-    {Object.keys(abc).map((name) => <Card client:visible letter={abc[name]}/>)}
+    {Object.keys(abc).map((name, i) => <Card 
+      client:visible
+      idx={i} 
+      letter={abc[name]}
+    />)}
   </main>
 </Layout>
 
@@ -22,6 +26,6 @@ const abc = JSON.parse(JSON.stringify(data));
     padding: 0;
     display: flex;
     width: min-content;
-    /* touch-action: none; */
+    touch-action: none;
   }
 </style>
