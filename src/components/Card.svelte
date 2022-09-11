@@ -81,7 +81,7 @@
   updateLetter(letter[index])
 </script>
 
-<section on:touchstart|self|passive={swipeCard}>
+<section on:touchstart|passive={swipeCard}>
   <h1>{char.repeat(2)}</h1>
   <figure on:click={toggleIndex}>{emoji}</figure>
   <p>{word}</p>
