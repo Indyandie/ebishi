@@ -1,5 +1,6 @@
 {
   "name": "@example/basics",
+  "packageManager": "yarn@4.1.0",
   "version": "0.0.1",
   "private": true,
   "scripts": {
