@@ -1,4 +1,4 @@
-# Ebishi
+# [Ebishi](https://indyandie.github.io/ebishi/)
 
 Index cards for my little one.
 
@@ -8,11 +8,14 @@ My little one likes to play with the phone whenever they can snatch it. So, I to
 
 ## The Plan
 
-- ABCs
-- Colors
-- Numbers
-- Animals
-- Seasons/Weather
-- Planets
-- Use Twemojis
-- Native App
+- [ ] [🔤 ABCs](https://indyandie.github.io/ebishi/abc/)
+  - [ ] +words/emojis
+- [ ] 🎨 Colors
+- [ ] 🔢 Numbers
+- [ ] 🐘 Animals
+- [ ] 🍁 Seasons/Weather
+- [ ] 🌎 Planets
+- [ ] Landing Page
+- [ ] Use Twemojis
+- [ ] Native App
+
