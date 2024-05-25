@@ -1,0 +1,135 @@
+{
+  "a": [ 
+    { "emoji": "✈️️", "word": "airplane" },
+    { "emoji": "🥑", "word": "avocado" },
+    { "emoji": "💪🏾", "word": "arm" },
+    { "emoji": "🍎", "word": "apple" }
+  ],
+  "b": [ 
+    { "emoji": "🐻", "word": "bear" },
+    { "emoji": "📦", "word": "box" },
+    { "emoji": "🐝", "word": "bee" },
+    { "emoji": "🦜", "word": "bird" }
+  ],
+  "c": [ 
+    { "emoji": "🌵", "word": "cactus" },
+    { "emoji": "⚪", "word": "circle" },
+    { "emoji": "🚗", "word": "car" },
+    { "emoji": "🦀", "word": "crab" }
+  ],
+  "d": [ 
+    { "emoji": "🐉", "word": "dragon" },
+    { "emoji": "🐬", "word": "dolphin" },
+    { "emoji": "🦌", "word": "deer" },
+    { "emoji": "🥟", "word": "dumpling" }
+  ],
+  "e": [ 
+    { "emoji": "👂🏾", "word": "ear" },
+    { "emoji": "8️⃣", "word": "eight" },
+    { "emoji": "🐘", "word": "elephant" },
+    { "emoji": "👁️", "word": "eye" }
+  ],
+  "f": [ 
+    { "emoji": "🦩", "word": "flamingo" },
+    { "emoji": "4️⃣", "word": "four" },
+    { "emoji": "🦊", "word": "fox" },
+    { "emoji": "5️⃣", "word": "five" },
+    { "emoji": "🌷", "word": "flower" }
+  ],
+  "g": [ 
+    { "emoji": "🍇", "word": "grapes" },
+    { "emoji": "🦒", "word": "giraffe" },
+    { "emoji": "🟢", "word": "green" },
+    { "emoji": "🎸", "word": "guitar" }
+  ],
+  "h": [ 
+    { "emoji": "🦔", "word": "hedgehog" },
+    { "emoji": "🎩", "word": "hat" }
+  ],
+  "i": [ 
+    { "emoji": "🍨", "word": "ice-cream" },
+    { "emoji": "🧊", "word": "ice cube"}
+  ],
+  "j": [ 
+    { "emoji": "👖", "word": "jeans" },
+    { "emoji": "🏺", "word": "jar" }
+  ],
+  "k": [ 
+    { "emoji": "🐨", "word": "koala" },
+    { "emoji": "⌨️", "word": "keyboard" },
+    { "emoji": "🦘", "word": "kangaroo" }
+  ],
+  "l": [ 
+    { "emoji": "🦙", "word": "llama" },
+    { "emoji": "🐞", "word": "ladybug" },
+    { "emoji": "🦵🏽", "word": "leg" }
+  ],
+  "m": [ 
+    { "emoji": "⛰️", "word": "mountain" },
+    { "emoji": "👄", "word": "mouth" },
+    { "emoji": "🐁", "word": "mouse" }
+  ],
+  "n": [ 
+    { "emoji": "📓", "word": "notebook" },
+    { "emoji": "9️⃣", "word": "nine" },
+    { "emoji": "👃🏼", "word": "nose" }
+  ],
+  "o": [ 
+    { "emoji": "🫒", "word": "olive" },
+    { "emoji": "1️⃣", "word": "one" },
+    { "emoji": "🐙", "word": "octopus" }
+  ],
+  "p": [ 
+    { "emoji": "️🐼", "word": "panda bear" },
+    { "emoji": "️🦚", "word": "peacock" },
+    { "emoji": "✏️", "word": "pencil" }
+  ],
+  "q": [ 
+    { "emoji": "️❓", "word": "question" },
+    { "emoji": "️👑", "word": "queen" }
+  ],
+  "r": [ 
+    { "emoji": "️🌈", "word": "rainbow" },
+    { "emoji": "️🐇", "word": "rabbit" }
+  ],
+  "s": [ 
+    { "emoji": "️🐍", "word": "snake" },
+    { "emoji": "️6️⃣", "word": "six" },
+    { "emoji": "️⬜", "word": "square" },
+    { "emoji": "️🐌", "word": "snail" },
+    { "emoji": "️7️⃣", "word": "seven" },
+    { "emoji": "️🦈", "word": "shark" }
+  ],
+  "t": [ 
+    { "emoji": "️🦖", "word": "t-rex" },
+    { "emoji": "️🔟", "word": "ten" },
+    { "emoji": "️▲", "word": "triangle" },
+    { "emoji": "️⛺", "word": "tent" },
+    { "emoji": "️🫖", "word": "teapot" }
+  ],
+  "u": [ 
+    { "emoji": "️☂️", "word": "umbrella" },
+    { "emoji": "️🦄", "word": "unicorn" }
+  ],
+  "v": [ 
+    { "emoji": "️🌋", "word": "volcano" },
+    { "emoji": "️🎻", "word": "violin" }
+  ],
+  "w": [ 
+    { "emoji": "️🐋", "word": "whale" },
+    { "emoji": "️🧇", "word": "waffle" },
+    { "emoji": "️🪱", "word": "worm" }
+  ],
+  "x": [ 
+    { "emoji": "❎", "word": "x-mark" },
+    { "emoji": "️🩻", "word": "x-ray" }
+  ],
+  "y": [ 
+    { "emoji": "️🪀", "word": "yo-yo" },
+    { "emoji": "️🧶", "word": "yarn" }
+  ],
+  "z": [ 
+    { "emoji": "0️⃣", "word": "zero" },
+    { "emoji": "️🦓", "word": "zebra" }
+  ]
+}
