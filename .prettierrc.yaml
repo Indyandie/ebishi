@@ -1,6 +1,7 @@
 plugins:
   - "prettier-plugin-astro"
   - "prettier-plugin-svelte"
+  - "prettier-plugin-tailwindcss" # must be last
 overrides:
   - files: "*.astro"
     options:
