@@ -6,21 +6,7 @@ const abc = JSON.parse(JSON.stringify(data))
 ---
 
 <Layout title="abc">
-  <main>
+  <main class="flex m-auto p-0 w-min touch-none">
     {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
   </main>
 </Layout>
-
-<style>
-  h1 {
-    margin: 2rem 0;
-  }
-
-  main {
-    margin: auto;
-    padding: 0;
-    display: flex;
-    width: min-content;
-    touch-action: none;
-  }
-</style>
