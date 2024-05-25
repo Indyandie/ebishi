@@ -81,48 +81,30 @@
   updateLetter(letter[index])
 </script>
 
-<section on:touchstart|passive={swipeCard}>
-  <h1>{char.repeat(2)}</h1>
-  <figure on:click={toggleIndex}>{emoji}</figure>
-  <p>{word}</p>
+<!-- -webkit-touch-callout: none; /* iOS Safari */ -->
+<section
+  class="bg-[#494B7A] text-[#FFF]
+    w-screen h-screen
+    flex flex-col
+    justify-center
+    items-center
+    select-none
+    touch-pan-x
+    transition-all delay-[2s] ease-in"
+  on:touchstart|passive={swipeCard}>
+  <h1 class="capitalize text-9xl m-0 mb-6">
+    {char.repeat(2)}
+  </h1>
+  <!-- height: 180px; -->
+  <button
+    class="text-[180px] m-0
+    flex
+    active:scale-50
+    transition-all delay-100"
+    on:click={toggleIndex}>
+    {emoji}
+  </button>
+  <p class="text-5xl mt-6">
+    {word}
+  </p>
 </section>
-
-<style>
-  section {
-    background-color: #494b7a;
-    color: #fff;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none;
-    touch-action: pan-x;
-    transition: all 2s ease;
-  }
-
-  h1 {
-    text-transform: capitalize;
-    font-size: 120px;
-    margin: 0;
-  }
-
-  figure {
-    font-size: 180px;
-    display: flex;
-    margin: 0;
-    height: 180px;
-    transition: all 200ms;
-  }
-
-  figure:active {
-    transform: scale(0.6);
-  }
-
-  p {
-    font-size: 48px;
-  }
-</style>
