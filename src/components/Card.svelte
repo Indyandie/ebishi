@@ -7,7 +7,7 @@
   let char
   let index = 0
 
-  const updateLetter = letter => {
+  const updateLetter = (letter) => {
     emoji = letter.emoji
     word = letter.word
     char = word[0]
@@ -23,20 +23,20 @@
   }
 
   const minSwipeChange = 44
-  const swipeCard = e => {
+  const swipeCard = (e) => {
     const card = e.target
     let scrollCurr = window.innerWidth * idx
 
     let touchstartX = e.changedTouches[0].screenX
     let tcMoveStart = touchstartX
     let tcCurr = 0
-    let touchendX = touchstartX
+    // let touchendX = touchstartX
 
-    document.body.setAttribute("style", `scroll-behavior: unset;`)
+    document.body.setAttribute('style', `scroll-behavior: unset;`)
 
-    const moveCard = e => {
+    const moveCard = (e) => {
       tcCurr = e.changedTouches[0].screenX
-      let tcMoveDiff = (tcMoveStart - tcCurr)
+      let tcMoveDiff = tcMoveStart - tcCurr
       // card.setAttribute("style", `transition: unset; margin-left: ${tcDiff}px`)
       document.body.scrollBy(tcMoveDiff, 0)
       tcMoveStart = tcCurr
@@ -44,18 +44,18 @@
 
     card.addEventListener('touchmove', moveCard, { passive: true })
 
-    const endTouch = e => {
+    const endTouch = (e) => {
       const touchendX = e.changedTouches[0].screenX
       checkDirection(touchendX)
 
       card.removeEventListener('touchmove', moveCard, { passive: true })
     }
 
-    card.addEventListener("touchend", endTouch)
+    card.addEventListener('touchend', endTouch)
 
-    const checkDirection = tce => {
-      const tcDiff = touchstartX - tce;
-      document.body.setAttribute("style", `scroll-behavior: smooth;`)
+    const checkDirection = (tce) => {
+      const tcDiff = touchstartX - tce
+      document.body.setAttribute('style', `scroll-behavior: smooth;`)
 
       if (Math.abs(tcDiff) > minSwipeChange) {
         // swipe left
@@ -74,7 +74,7 @@
         document.body.scrollTo(scrollCurr, 0)
       }
 
-      card.removeEventListener("touchend", endTouch)
+      card.removeEventListener('touchend', endTouch)
     }
   }
 
@@ -89,8 +89,8 @@
 
 <style>
   section {
-    background-color: #494B7A;
-    color: #FFF;
+    background-color: #494b7a;
+    color: #fff;
     width: 100vw;
     height: 100vh;
     display: flex;
