@@ -1,0 +1,12 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/CardEmojis.svelte'
+import data from '../data/emoji-list-alpha.json'
+const abc = JSON.parse(JSON.stringify(data))
+---
+
+<Layout title="abc">
+  <main class="m-auto flex w-min touch-none p-0">
+    {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
+  </main>
+</Layout>
