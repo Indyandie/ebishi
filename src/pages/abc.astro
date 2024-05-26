@@ -15,11 +15,9 @@ const abc = JSON.parse(JSON.stringify(data))
     if (key == 39 && multiplier < 25) {
       const moveScroll = (multiplier + 1) * width
       document.body.scrollTo(moveScroll, 0)
-      console.log(event.keyCode, multiplier)
     } else if (key == 37 && multiplier > 0) {
       const moveScroll = (multiplier - 1) * width
       document.body.scrollTo(moveScroll, 0)
-      console.log(event.keyCode, multiplier)
     }
   })
 </script>
