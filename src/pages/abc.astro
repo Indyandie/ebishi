@@ -8,7 +8,6 @@ const abc = JSON.parse(JSON.stringify(data))
 ---
 
 <script>
-  const vidTest = document.querySelector('#video-test')
   function setFullscreen() {
     if (!document.fullscreen) {
       document.body.requestFullscreen().catch((error) => {
@@ -26,16 +25,22 @@ const abc = JSON.parse(JSON.stringify(data))
     exitBtn.classList.add('hidden')
   }
 
-  const fullBtn = document.querySelector('#full-btn')
-  fullBtn.addEventListener('click', () => {
-    vidTest.webkitEnterFullscreen()
-    setFullscreen()
-  })
+  function isVideoInFullscreen() {
+    if (document.fullscreenEnabbled) {
+      const fullBtn = document.querySelector('#full-btn')
+      fullBtn.addEventListener('click', () => {
+        setFullscreen()
+      })
 
-  const exitBtn = document.querySelector('#exit-full-btn')
-  exitBtn.addEventListener('click', () => {
-    exitFullscreen()
-  })
+      const exitBtn = document.querySelector('#exit-full-btn')
+      exitBtn.addEventListener('click', () => {
+        exitFullscreen()
+      })
+    } else {
+      const fullBtn = document.querySelector('#full-btn')
+      fullBtn.classList.add('hidden')
+    }
+  }
 
   document.body.addEventListener('keydown', (event) => {
     const key = event.keyCode
@@ -68,5 +73,4 @@ const abc = JSON.parse(JSON.stringify(data))
   <main class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all">
     {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
   </main>
-  <video id="video-test">video test</video>
 </Layout>
