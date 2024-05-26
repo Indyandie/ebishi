@@ -104,7 +104,7 @@
     on:click={toggleIndex}>
     {emoji}
   </button>
-  <p class="text-5xl mt-6">
+  <p class="text-center text-4xl mt-6">
     {word}
   </p>
 </section>
