@@ -83,28 +83,28 @@
 
 <!-- -webkit-touch-callout: none; /* iOS Safari */ -->
 <section
-  class="bg-[#494B7A] text-[#FFF]
-    w-screen h-screen
-    flex flex-col
-    justify-center
+  class="flex h-screen
+    w-screen touch-pan-x
+    select-none flex-col
     items-center
-    select-none
-    touch-pan-x
-    transition-all delay-[2s] ease-in"
+    justify-center
+    bg-[#494B7A]
+    text-[#FFF]
+    transition-all ease-in"
   on:touchstart|passive={swipeCard}>
-  <h1 class="capitalize text-9xl m-0 mb-6">
+  <h1 class="m-0 mb-6 text-9xl capitalize">
     {char.repeat(2)}
   </h1>
   <!-- height: 180px; -->
   <button
-    class="text-[180px] m-0
-    flex
-    active:scale-50
-    transition-all delay-100"
+    class="m-0 flex
+    text-[180px]
+    transition-all
+    delay-100 active:scale-50"
     on:click={toggleIndex}>
     {emoji}
   </button>
-  <p class="text-center text-4xl mt-6">
+  <p class="mt-6 text-center text-4xl">
     {word}
   </p>
 </section>
