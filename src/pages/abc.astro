@@ -6,25 +6,57 @@ const abc = JSON.parse(JSON.stringify(data))
 ---
 
 <script>
-  window.addEventListener('keydown', (event) => {
+  function setFullscreen() {
+    if (!document.fullscreen) {
+      document.body.requestFullscreen().catch((error) => {
+        console.log.textContent += `${error}\n`
+      })
+      screen.orientation.lock('any')
+    }
+  }
+
+  function exitFullscreen() {
+    document.exitFullscreen()
+  }
+
+  const fullBtn = document.querySelector('#full-btn')
+  fullBtn.addEventListener('click', () => {
+    setFullscreen()
+    exitBtn.classList.remove('hidden')
+    fullBtn.classList.add('hidden')
+  })
+
+  const exitBtn = document.querySelector('#exit-full-btn')
+  exitBtn.addEventListener('click', () => {
+    exitFullscreen()
+    fullBtn.classList.remove('hidden')
+    exitBtn.classList.add('hidden')
+  })
+
+  document.body.addEventListener('keydown', (event) => {
     const key = event.keyCode
     const width = window.innerWidth
     const scroll = document.body.scrollLeft
     const multiplier = Math.round(scroll / width)
 
+    console.log(key)
     if (key == 39 && multiplier < 25) {
+      setFullscreen()
       const moveScroll = (multiplier + 1) * width
       document.body.scrollTo(moveScroll, 0)
     } else if (key == 37 && multiplier > 0) {
+      setFullscreen()
       const moveScroll = (multiplier - 1) * width
       document.body.scrollTo(moveScroll, 0)
     }
   })
-
-  screen.orientation.lock('portrait')
 </script>
 
 <Layout title="abc">
+  <aside class="fixed p-4">
+    <button id="full-btn" class="text-red-500">fullscreen</button>
+    <button id="exit-full-btn" class="hidden text-red-500">exit fullscreen</button>
+  </aside>
   <main class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all">
     {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
   </main>
