@@ -5,8 +5,27 @@ import data from '../data/abc-emoji-list.json'
 const abc = JSON.parse(JSON.stringify(data))
 ---
 
+<script>
+  window.addEventListener('keydown', (event) => {
+    const key = event.keyCode
+    const width = window.innerWidth
+    const scroll = document.body.scrollLeft
+    const multiplier = Math.round(scroll / width)
+
+    if (key == 39 && multiplier < 25) {
+      const moveScroll = (multiplier + 1) * width
+      document.body.scrollTo(moveScroll, 0)
+      console.log(event.keyCode, multiplier)
+    } else if (key == 37 && multiplier > 0) {
+      const moveScroll = (multiplier - 1) * width
+      document.body.scrollTo(moveScroll, 0)
+      console.log(event.keyCode, multiplier)
+    }
+  })
+</script>
+
 <Layout title="abc">
-  <main class="flex m-auto p-0 w-min touch-none">
+  <main class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all">
     {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
   </main>
 </Layout>
