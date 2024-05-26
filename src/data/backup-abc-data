@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+cp ./abc-emoji-list.json ./.backups/abc-emoji-list-$(date -I)-$(date +%T).json

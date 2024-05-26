@@ -14,6 +14,12 @@ Generate `abc-emoji-list.json` data file. Exclude objects with the certain categ
 ./gen-abc-data
 ```
 
+Backup `abc-emoji-list.json` data file to `.backups`.
+
+```sh
+./backup-abc-data
+```
+
 ## Commands
 
 Exclude objects with the categories `Flag` and `Smileys & Emotion`.
