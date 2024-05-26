@@ -2,6 +2,8 @@
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/CardABC.svelte'
 import data from '../data/abc-emoji-list.json'
+import '../styles/fontawesome/fontawesome.css'
+import '../styles/fontawesome/solid.css'
 const abc = JSON.parse(JSON.stringify(data))
 ---
 
@@ -53,9 +55,13 @@ const abc = JSON.parse(JSON.stringify(data))
 </script>
 
 <Layout title="abc">
-  <aside class="fixed p-4">
-    <button id="full-btn" class="text-red-500">fullscreen</button>
-    <button id="exit-full-btn" class="hidden text-red-500">exit fullscreen</button>
+  <aside class="fixed flex w-screen items-end justify-end p-4">
+    <button id="full-btn" class="text-5lg text-white">
+      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+    </button>
+    <button id="exit-full-btn" class="text-5lg hidden text-white">
+      <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+    </button>
   </aside>
   <main class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all">
     {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
