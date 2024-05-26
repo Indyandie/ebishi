@@ -10,15 +10,15 @@
     },
     {
       "emoji": "🎟️",
-      "word": "admission tickets"
+      "word": "tickets"
     },
     {
       "emoji": "🏈",
-      "word": "american football"
+      "word": "football"
     },
     {
       "emoji": "🎨",
-      "word": "artist palette"
+      "word": "palette"
     },
     {
       "emoji": "🪗",
@@ -38,13 +38,13 @@
     },
     {
       "emoji": "🩹",
-      "word": "adhesive bandage"
+      "word": "bandage"
     }
   ],
   "b": [
     {
       "emoji": "🐈‍⬛",
-      "word": "black cat"
+      "word": "cat"
     },
     {
       "emoji": "🦬",
@@ -72,7 +72,7 @@
     },
     {
       "emoji": "🐤",
-      "word": "baby chick"
+      "word": "chick"
     },
     {
       "emoji": "🐦",
@@ -80,7 +80,7 @@
     },
     {
       "emoji": "🐦‍⬛",
-      "word": "black bird"
+      "word": "bird"
     },
     {
       "emoji": "🐡",
@@ -92,7 +92,7 @@
     },
     {
       "emoji": "🐛",
-      "word": "bug"
+      "word": "caterpillar"
     },
     {
       "emoji": "🪲",
@@ -104,7 +104,7 @@
     },
     {
       "emoji": "🌼",
-      "word": "blossom"
+      "word": "flower"
     },
     {
       "emoji": "🍌",
@@ -116,7 +116,7 @@
     },
     {
       "emoji": "🫑",
-      "word": "bell pepper"
+      "word": "pepper"
     },
     {
       "emoji": "🥦",
@@ -132,7 +132,7 @@
     },
     {
       "emoji": "🥖",
-      "word": "baguette bread"
+      "word": "baguette"
     },
     {
       "emoji": "🥯",
@@ -148,7 +148,7 @@
     },
     {
       "emoji": "🥣",
-      "word": "bowl with spoon"
+      "word": "bowl"
     },
     {
       "emoji": "🧈",
@@ -160,27 +160,11 @@
     },
     {
       "emoji": "🎂",
-      "word": "birthday cake"
+      "word": "cake"
     },
     {
       "emoji": "🍼",
       "word": "baby bottle"
-    },
-    {
-      "emoji": "🍾",
-      "word": "bottle with popping cork"
-    },
-    {
-      "emoji": "🍺",
-      "word": "beer mug"
-    },
-    {
-      "emoji": "🧋",
-      "word": "bubble tea"
-    },
-    {
-      "emoji": "🧃",
-      "word": "beverage box"
     },
     {
       "emoji": "🎈",
@@ -211,14 +195,6 @@
       "word": "bullseye"
     },
     {
-      "emoji": "🩲",
-      "word": "briefs"
-    },
-    {
-      "emoji": "👙",
-      "word": "bikini"
-    },
-    {
       "emoji": "🎒",
       "word": "backpack"
     },
@@ -228,15 +204,11 @@
     },
     {
       "emoji": "🧢",
-      "word": "billed cap"
+      "word": "cap"
     },
     {
       "emoji": "🔔",
       "word": "bell"
-    },
-    {
-      "emoji": "🔕",
-      "word": "bell with slash"
     },
     {
       "emoji": "🪕",
@@ -255,28 +227,8 @@
       "word": "books"
     },
     {
-      "emoji": "📑",
-      "word": "bookmark tabs"
-    },
-    {
-      "emoji": "🔖",
-      "word": "bookmark"
-    },
-    {
-      "emoji": "🗳️",
-      "word": "ballot box with ballot"
-    },
-    {
-      "emoji": "✒️",
-      "word": "black nib"
-    },
-    {
       "emoji": "💼",
       "word": "briefcase"
-    },
-    {
-      "emoji": "📊",
-      "word": "bar chart"
     },
     {
       "emoji": "💣",
@@ -292,7 +244,7 @@
     },
     {
       "emoji": "⚖️",
-      "word": "balance scale"
+      "word": "scale"
     },
     {
       "emoji": "🛏️",
@@ -321,16 +273,12 @@
   ],
   "c": [
     {
-      "emoji": "🐱",
-      "word": "cat face"
-    },
-    {
       "emoji": "🐈",
       "word": "cat"
     },
     {
       "emoji": "🐮",
-      "word": "cow face"
+      "word": "cow"
     },
     {
       "emoji": "🐄",
@@ -398,27 +346,19 @@
     },
     {
       "emoji": "🧀",
-      "word": "cheese wedge"
+      "word": "cheese"
     },
     {
       "emoji": "🥩",
-      "word": "cut of meat"
-    },
-    {
-      "emoji": "🍳",
-      "word": "cooking"
+      "word": "meat"
     },
     {
       "emoji": "🥫",
-      "word": "canned food"
+      "word": "can"
     },
     {
       "emoji": "🍚",
-      "word": "cooked rice"
-    },
-    {
-      "emoji": "🍛",
-      "word": "curry rice"
+      "word": "rice"
     },
     {
       "emoji": "🦀",
@@ -434,31 +374,15 @@
     },
     {
       "emoji": "🍫",
-      "word": "chocolate bar"
+      "word": "chocolate"
     },
     {
       "emoji": "🍬",
       "word": "candy"
     },
     {
-      "emoji": "🍮",
-      "word": "custard"
-    },
-    {
-      "emoji": "🍸",
-      "word": "cocktail glass"
-    },
-    {
-      "emoji": "🍻",
-      "word": "clinking beer mugs"
-    },
-    {
-      "emoji": "🥂",
-      "word": "clinking glasses"
-    },
-    {
       "emoji": "🥤",
-      "word": "cup with straw"
+      "word": "cup"
     },
     {
       "emoji": "🥢",
@@ -466,67 +390,35 @@
     },
     {
       "emoji": "🎊",
-      "word": "confetti ball"
-    },
-    {
-      "emoji": "🎏",
-      "word": "carp streamer"
+      "word": "confetti"
     },
     {
       "emoji": "🏏",
-      "word": "cricket game"
-    },
-    {
-      "emoji": "🥌",
-      "word": "curling stone"
+      "word": "cricket"
     },
     {
       "emoji": "🔮",
       "word": "crystal ball"
     },
     {
-      "emoji": "♣️",
-      "word": "club suit"
-    },
-    {
       "emoji": "♟️",
-      "word": "chess pawn"
+      "word": "chess"
     },
     {
       "emoji": "🧥",
       "word": "coat"
     },
     {
-      "emoji": "👝",
-      "word": "clutch bag"
-    },
-    {
       "emoji": "👑",
       "word": "crown"
-    },
-    {
-      "emoji": "🎛️",
-      "word": "control knobs"
     },
     {
       "emoji": "🖱️",
       "word": "computer mouse"
     },
     {
-      "emoji": "💽",
-      "word": "computer disk"
-    },
-    {
-      "emoji": "🎬",
-      "word": "clapper board"
-    },
-    {
       "emoji": "📷",
       "word": "camera"
-    },
-    {
-      "emoji": "📸",
-      "word": "camera with flash"
     },
     {
       "emoji": "🕯️",
@@ -534,67 +426,35 @@
     },
     {
       "emoji": "📕",
-      "word": "closed book"
+      "word": "book"
     },
     {
       "emoji": "🪙",
       "word": "coin"
     },
     {
-      "emoji": "💳",
-      "word": "credit card"
-    },
-    {
-      "emoji": "💹",
-      "word": "chart increasing with yen"
-    },
-    {
       "emoji": "📫",
-      "word": "closed mailbox with raised flag"
-    },
-    {
-      "emoji": "📪",
-      "word": "closed mailbox with lowered flag"
+      "word": "mailbox"
     },
     {
       "emoji": "🖍️",
       "word": "crayon"
     },
     {
-      "emoji": "🗂️",
-      "word": "card index dividers"
-    },
-    {
       "emoji": "📅",
       "word": "calendar"
-    },
-    {
-      "emoji": "📇",
-      "word": "card index"
-    },
-    {
-      "emoji": "📈",
-      "word": "chart increasing"
-    },
-    {
-      "emoji": "📉",
-      "word": "chart decreasing"
     },
     {
       "emoji": "📋",
       "word": "clipboard"
     },
     {
-      "emoji": "🗃️",
-      "word": "card file box"
-    },
-    {
       "emoji": "⚔️",
-      "word": "crossed swords"
+      "word": "swords"
     },
     {
       "emoji": "🪚",
-      "word": "carpentry saw"
+      "word": "saw"
     },
     {
       "emoji": "🗜️",
@@ -609,26 +469,14 @@
       "word": "crutch"
     },
     {
-      "emoji": "🛋️",
-      "word": "couch and lamp"
-    },
-    {
       "emoji": "🪑",
       "word": "chair"
-    },
-    {
-      "emoji": "🚬",
-      "word": "cigarette"
-    },
-    {
-      "emoji": "⚰️",
-      "word": "coffin"
     }
   ],
   "d": [
     {
       "emoji": "🐶",
-      "word": "dog face"
+      "word": "dog"
     },
     {
       "emoji": "🐕",
@@ -656,7 +504,7 @@
     },
     {
       "emoji": "🐲",
-      "word": "dragon face"
+      "word": "dragon"
     },
     {
       "emoji": "🐉",
@@ -668,7 +516,7 @@
     },
     {
       "emoji": "🌳",
-      "word": "deciduous tree"
+      "word": "tree"
     },
     {
       "emoji": "🍡",
@@ -684,11 +532,11 @@
     },
     {
       "emoji": "🤿",
-      "word": "diving mask"
+      "word": "snorkle"
     },
     {
       "emoji": "♦️",
-      "word": "diamond suit"
+      "word": "diamond"
     },
     {
       "emoji": "👗",
@@ -703,16 +551,8 @@
       "word": "desktop computer"
     },
     {
-      "emoji": "📀",
-      "word": "dvd"
-    },
-    {
-      "emoji": "🪔",
-      "word": "diya lamp"
-    },
-    {
       "emoji": "💵",
-      "word": "dollar banknote"
+      "word": "money"
     },
     {
       "emoji": "🗡️",
@@ -721,10 +561,6 @@
     {
       "emoji": "🧬",
       "word": "dna"
-    },
-    {
-      "emoji": "🩸",
-      "word": "drop of blood"
     },
     {
       "emoji": "🚪",
@@ -737,6 +573,10 @@
       "word": "ewe"
     },
     {
+      "emoji": "🐑",
+      "word": "sheep"
+    },
+    {
       "emoji": "🐘",
       "word": "elephant"
     },
@@ -746,11 +586,11 @@
     },
     {
       "emoji": "🌲",
-      "word": "evergreen tree"
+      "word": "pine tree"
     },
     {
       "emoji": "🪹",
-      "word": "empty nest"
+      "word": "nest"
     },
     {
       "emoji": "🍆",
@@ -758,7 +598,7 @@
     },
     {
       "emoji": "🌽",
-      "word": "ear of corn"
+      "word": "corn"
     },
     {
       "emoji": "🥚",
@@ -766,27 +606,11 @@
     },
     {
       "emoji": "🔌",
-      "word": "electric plug"
-    },
-    {
-      "emoji": "💶",
-      "word": "euro banknote"
+      "word": "plug"
     },
     {
       "emoji": "✉️",
       "word": "envelope"
-    },
-    {
-      "emoji": "📧",
-      "word": "e-mail"
-    },
-    {
-      "emoji": "📩",
-      "word": "envelope with arrow"
-    },
-    {
-      "emoji": "🛗",
-      "word": "elevator"
     }
   ],
   "f": [
@@ -796,7 +620,7 @@
     },
     {
       "emoji": "🐥",
-      "word": "front-facing baby chick"
+      "word": "chick"
     },
     {
       "emoji": "🪶",
@@ -820,11 +644,11 @@
     },
     {
       "emoji": "🍀",
-      "word": "four leaf clover"
+      "word": "clover"
     },
     {
       "emoji": "🍂",
-      "word": "fallen leaf"
+      "word": "leaves"
     },
     {
       "emoji": "🫓",
@@ -837,26 +661,6 @@
     {
       "emoji": "🧆",
       "word": "falafel"
-    },
-    {
-      "emoji": "🫕",
-      "word": "fondue"
-    },
-    {
-      "emoji": "🍤",
-      "word": "fried shrimp"
-    },
-    {
-      "emoji": "🍥",
-      "word": "fish cake with swirl"
-    },
-    {
-      "emoji": "🥠",
-      "word": "fortune cookie"
-    },
-    {
-      "emoji": "🍽️",
-      "word": "fork and knife with plate"
     },
     {
       "emoji": "🍴",
@@ -872,55 +676,31 @@
     },
     {
       "emoji": "🥏",
-      "word": "flying disc"
-    },
-    {
-      "emoji": "🏑",
-      "word": "field hockey"
-    },
-    {
-      "emoji": "⛳",
-      "word": "flag in hole"
+      "word": "disc"
     },
     {
       "emoji": "🎣",
       "word": "fishing pole"
     },
     {
-      "emoji": "🎴",
-      "word": "flower playing cards"
-    },
-    {
       "emoji": "🖼️",
-      "word": "framed picture"
+      "word": "picture"
     },
     {
       "emoji": "🪭",
-      "word": "folding hand fan"
+      "word": "fan"
     },
     {
       "emoji": "🥿",
-      "word": "flat shoe"
+      "word": "shoe"
     },
     {
       "emoji": "🪈",
       "word": "flute"
     },
     {
-      "emoji": "📠",
-      "word": "fax machine"
-    },
-    {
-      "emoji": "💾",
-      "word": "floppy disk"
-    },
-    {
-      "emoji": "🎞️",
-      "word": "film frames"
-    },
-    {
       "emoji": "📽️",
-      "word": "film projector"
+      "word": "projector"
     },
     {
       "emoji": "🔦",
@@ -928,23 +708,19 @@
     },
     {
       "emoji": "🖋️",
-      "word": "fountain pen"
+      "word": "pen"
     },
     {
       "emoji": "📁",
-      "word": "file folder"
+      "word": "folder"
     },
     {
       "emoji": "🗄️",
-      "word": "file cabinet"
+      "word": "cabinet"
     },
     {
       "emoji": "🧯",
       "word": "fire extinguisher"
-    },
-    {
-      "emoji": "⚱️",
-      "word": "funeral urn"
     }
   ],
   "g": [
@@ -954,7 +730,7 @@
     },
     {
       "emoji": "🦮",
-      "word": "guide dog"
+      "word": "dog"
     },
     {
       "emoji": "🐐",
@@ -974,7 +750,7 @@
     },
     {
       "emoji": "🍏",
-      "word": "green apple"
+      "word": "apple"
     },
     {
       "emoji": "🧄",
@@ -982,23 +758,23 @@
     },
     {
       "emoji": "🫚",
-      "word": "ginger root"
+      "word": "ginger"
     },
     {
       "emoji": "🥗",
-      "word": "green salad"
+      "word": "salad"
     },
     {
       "emoji": "🥛",
-      "word": "glass of milk"
+      "word": "milk"
     },
     {
       "emoji": "🥅",
-      "word": "goal net"
+      "word": "goal"
     },
     {
       "emoji": "🎲",
-      "word": "game die"
+      "word": "die"
     },
     {
       "emoji": "👓",
@@ -1013,12 +789,8 @@
       "word": "gloves"
     },
     {
-      "emoji": "🎓",
-      "word": "graduation cap"
-    },
-    {
       "emoji": "💎",
-      "word": "gem stone"
+      "word": "diamond"
     },
     {
       "emoji": "🎸",
@@ -1026,7 +798,7 @@
     },
     {
       "emoji": "📗",
-      "word": "green book"
+      "word": "book"
     },
     {
       "emoji": "⚙️",
@@ -1036,7 +808,7 @@
   "h": [
     {
       "emoji": "🐴",
-      "word": "horse face"
+      "word": "horse"
     },
     {
       "emoji": "🐎",
@@ -1056,7 +828,7 @@
     },
     {
       "emoji": "🐣",
-      "word": "hatching chick"
+      "word": "chick"
     },
     {
       "emoji": "🐝",
@@ -1088,15 +860,11 @@
     },
     {
       "emoji": "🍯",
-      "word": "honey pot"
+      "word": "honey"
     },
     {
       "emoji": "☕",
-      "word": "hot beverage"
-    },
-    {
-      "emoji": "♥️",
-      "word": "heart suit"
+      "word": "coffee"
     },
     {
       "emoji": "👜",
@@ -1104,15 +872,11 @@
     },
     {
       "emoji": "🥾",
-      "word": "hiking boot"
+      "word": "boot"
     },
     {
       "emoji": "👠",
-      "word": "high-heeled shoe"
-    },
-    {
-      "emoji": "🪮",
-      "word": "hair pick"
+      "word": "heels"
     },
     {
       "emoji": "🎧",
@@ -1123,24 +887,8 @@
       "word": "hammer"
     },
     {
-      "emoji": "⚒️",
-      "word": "hammer and pick"
-    },
-    {
-      "emoji": "🛠️",
-      "word": "hammer and wrench"
-    },
-    {
       "emoji": "🪝",
       "word": "hook"
-    },
-    {
-      "emoji": "🪦",
-      "word": "headstone"
-    },
-    {
-      "emoji": "🪬",
-      "word": "hamsa"
     }
   ],
   "i": [
@@ -1162,11 +910,7 @@
     },
     {
       "emoji": "📨",
-      "word": "incoming envelope"
-    },
-    {
-      "emoji": "📥",
-      "word": "inbox tray"
+      "word": "envelope"
     },
     {
       "emoji": "🪪",
@@ -1174,10 +918,6 @@
     }
   ],
   "j": [
-    {
-      "emoji": "🏺",
-      "word": "jar"
-    },
     {
       "emoji": "🪼",
       "word": "jellyfish"
@@ -1196,7 +936,7 @@
     },
     {
       "emoji": "🃏",
-      "word": "joker"
+      "word": "card"
     },
     {
       "emoji": "👖",
@@ -1214,11 +954,11 @@
     },
     {
       "emoji": "🥝",
-      "word": "kiwi fruit"
+      "word": "kiwi"
     },
     {
       "emoji": "🔪",
-      "word": "kitchen knife"
+      "word": "knife"
     },
     {
       "emoji": "🪁",
@@ -1260,23 +1000,15 @@
     },
     {
       "emoji": "🐞",
-      "word": "lady beetle"
+      "word": "ladybug"
     },
     {
       "emoji": "🪷",
       "word": "lotus"
     },
     {
-      "emoji": "🍃",
-      "word": "leaf fluttering in wind"
-    },
-    {
       "emoji": "🍋",
       "word": "lemon"
-    },
-    {
-      "emoji": "🥬",
-      "word": "leafy green"
     },
     {
       "emoji": "🦞",
@@ -1287,68 +1019,32 @@
       "word": "lollipop"
     },
     {
-      "emoji": "🥍",
-      "word": "lacrosse"
-    },
-    {
       "emoji": "🥼",
       "word": "lab coat"
-    },
-    {
-      "emoji": "💄",
-      "word": "lipstick"
     },
     {
       "emoji": "📢",
       "word": "loudspeaker"
     },
     {
-      "emoji": "🎚️",
-      "word": "level slider"
-    },
-    {
       "emoji": "🪘",
-      "word": "long drum"
-    },
-    {
-      "emoji": "🪫",
-      "word": "low battery"
+      "word": "drum"
     },
     {
       "emoji": "💻",
-      "word": "laptop"
+      "word": "desktop computer"
     },
     {
       "emoji": "💡",
       "word": "light bulb"
     },
     {
-      "emoji": "📒",
-      "word": "ledger"
-    },
-    {
-      "emoji": "🏷️",
-      "word": "label"
-    },
-    {
       "emoji": "🖇️",
-      "word": "linked paperclips"
+      "word": "paperclips"
     },
     {
       "emoji": "🔒",
-      "word": "locked"
-    },
-    {
-      "emoji": "🔏",
-      "word": "locked with pen"
-    },
-    {
-      "emoji": "🔐",
-      "word": "locked with key"
-    },
-    {
-      "emoji": "🔗",
-      "word": "link"
+      "word": "lock"
     },
     {
       "emoji": "🪜",
@@ -1356,13 +1052,13 @@
     },
     {
       "emoji": "🧴",
-      "word": "lotion bottle"
+      "word": "lotion"
     }
   ],
   "m": [
     {
       "emoji": "🐵",
-      "word": "monkey face"
+      "word": "monkey"
     },
     {
       "emoji": "🐒",
@@ -1378,7 +1074,7 @@
     },
     {
       "emoji": "🐭",
-      "word": "mouse face"
+      "word": "mouse"
     },
     {
       "emoji": "🐁",
@@ -1394,7 +1090,7 @@
     },
     {
       "emoji": "🍁",
-      "word": "maple leaf"
+      "word": "leaf"
     },
     {
       "emoji": "🍄",
@@ -1410,59 +1106,23 @@
     },
     {
       "emoji": "🍖",
-      "word": "meat on bone"
-    },
-    {
-      "emoji": "🥮",
-      "word": "moon cake"
-    },
-    {
-      "emoji": "🧉",
-      "word": "mate"
-    },
-    {
-      "emoji": "🎑",
-      "word": "moon viewing ceremony"
-    },
-    {
-      "emoji": "🎖️",
-      "word": "military medal"
-    },
-    {
-      "emoji": "🥋",
-      "word": "martial arts uniform"
+      "word": "meat"
     },
     {
       "emoji": "🪄",
       "word": "magic wand"
     },
     {
-      "emoji": "🪩",
-      "word": "mirror ball"
-    },
-    {
-      "emoji": "🀄",
-      "word": "mahjong red dragon"
-    },
-    {
       "emoji": "👞",
-      "word": "man’s shoe"
+      "word": "shoe"
     },
     {
       "emoji": "🪖",
-      "word": "military helmet"
-    },
-    {
-      "emoji": "🔇",
-      "word": "muted speaker"
+      "word": "helmet"
     },
     {
       "emoji": "📣",
       "word": "megaphone"
-    },
-    {
-      "emoji": "🎼",
-      "word": "musical score"
     },
     {
       "emoji": "🎵",
@@ -1489,28 +1149,20 @@
       "word": "mobile phone"
     },
     {
-      "emoji": "📲",
-      "word": "mobile phone with arrow"
-    },
-    {
       "emoji": "🎥",
       "word": "movie camera"
     },
     {
       "emoji": "🔍",
-      "word": "magnifying glass tilted left"
+      "word": "magnifying glass"
     },
     {
       "emoji": "🔎",
-      "word": "magnifying glass tilted right"
+      "word": "magnifying glass"
     },
     {
       "emoji": "💰",
-      "word": "money bag"
-    },
-    {
-      "emoji": "💸",
-      "word": "money with wings"
+      "word": "money"
     },
     {
       "emoji": "📝",
@@ -1527,20 +1179,12 @@
     {
       "emoji": "🪞",
       "word": "mirror"
-    },
-    {
-      "emoji": "🪤",
-      "word": "mouse trap"
-    },
-    {
-      "emoji": "🗿",
-      "word": "moai"
     }
   ],
   "n": [
     {
       "emoji": "🪺",
-      "word": "nest with eggs"
+      "word": "nest"
     },
     {
       "emoji": "🪆",
@@ -1552,7 +1196,7 @@
     },
     {
       "emoji": "📔",
-      "word": "notebook with decorative cover"
+      "word": "notebook"
     },
     {
       "emoji": "📓",
@@ -1561,14 +1205,6 @@
     {
       "emoji": "📰",
       "word": "newspaper"
-    },
-    {
-      "emoji": "🔩",
-      "word": "nut and bolt"
-    },
-    {
-      "emoji": "🧿",
-      "word": "nazar amulet"
     }
   ],
   "o": [
@@ -1594,7 +1230,7 @@
     },
     {
       "emoji": "🫒",
-      "word": "olive"
+      "word": "olives"
     },
     {
       "emoji": "🧅",
@@ -1610,39 +1246,31 @@
     },
     {
       "emoji": "🩱",
-      "word": "one-piece swimsuit"
-    },
-    {
-      "emoji": "💿",
-      "word": "optical disk"
+      "word": "swimsuit"
     },
     {
       "emoji": "📖",
-      "word": "open book"
+      "word": "book"
     },
     {
       "emoji": "📙",
-      "word": "orange book"
-    },
-    {
-      "emoji": "📤",
-      "word": "outbox tray"
+      "word": "book"
     },
     {
       "emoji": "📬",
-      "word": "open mailbox with raised flag"
+      "word": "mailbox"
     },
     {
       "emoji": "📭",
-      "word": "open mailbox with lowered flag"
+      "word": "mailbox"
     },
     {
       "emoji": "📂",
-      "word": "open file folder"
+      "word": "folder"
     },
     {
       "emoji": "🗝️",
-      "word": "old key"
+      "word": "key"
     }
   ],
   "p": [
@@ -1652,15 +1280,11 @@
     },
     {
       "emoji": "🐷",
-      "word": "pig face"
+      "word": "pig"
     },
     {
       "emoji": "🐖",
       "word": "pig"
-    },
-    {
-      "emoji": "🐽",
-      "word": "pig nose"
     },
     {
       "emoji": "🐻‍❄️",
@@ -1668,7 +1292,7 @@
     },
     {
       "emoji": "🐼",
-      "word": "panda"
+      "word": "panda bear"
     },
     {
       "emoji": "🐾",
@@ -1688,7 +1312,7 @@
     },
     {
       "emoji": "🪴",
-      "word": "potted plant"
+      "word": "plant"
     },
     {
       "emoji": "🌴",
@@ -1735,10 +1359,6 @@
       "word": "pizza"
     },
     {
-      "emoji": "🍲",
-      "word": "pot of food"
-    },
-    {
       "emoji": "🍿",
       "word": "popcorn"
     },
@@ -1747,24 +1367,12 @@
       "word": "pie"
     },
     {
-      "emoji": "🫗",
-      "word": "pouring liquid"
-    },
-    {
       "emoji": "🎉",
       "word": "party popper"
     },
     {
-      "emoji": "🎍",
-      "word": "pine decoration"
-    },
-    {
       "emoji": "🏓",
       "word": "ping pong"
-    },
-    {
-      "emoji": "🎱",
-      "word": "pool 8 ball"
     },
     {
       "emoji": "🧩",
@@ -1775,24 +1383,12 @@
       "word": "piñata"
     },
     {
-      "emoji": "🎭",
-      "word": "performing arts"
-    },
-    {
       "emoji": "👛",
       "word": "purse"
     },
     {
-      "emoji": "📿",
-      "word": "prayer beads"
-    },
-    {
       "emoji": "📯",
-      "word": "postal horn"
-    },
-    {
-      "emoji": "📟",
-      "word": "pager"
+      "word": "horn"
     },
     {
       "emoji": "🖨️",
@@ -1800,23 +1396,15 @@
     },
     {
       "emoji": "📃",
-      "word": "page with curl"
+      "word": "paper"
     },
     {
       "emoji": "📄",
-      "word": "page facing up"
-    },
-    {
-      "emoji": "💷",
-      "word": "pound banknote"
+      "word": "paper"
     },
     {
       "emoji": "📦",
-      "word": "package"
-    },
-    {
-      "emoji": "📮",
-      "word": "postbox"
+      "word": "box"
     },
     {
       "emoji": "✏️",
@@ -1853,10 +1441,6 @@
     {
       "emoji": "🪠",
       "word": "plunger"
-    },
-    {
-      "emoji": "🪧",
-      "word": "placard"
     }
   ],
   "r": [
@@ -1878,7 +1462,7 @@
     },
     {
       "emoji": "🐰",
-      "word": "rabbit face"
+      "word": "rabbit"
     },
     {
       "emoji": "🐇",
@@ -1889,20 +1473,12 @@
       "word": "rooster"
     },
     {
-      "emoji": "🏵️",
-      "word": "rosette"
-    },
-    {
       "emoji": "🌹",
       "word": "rose"
     },
     {
       "emoji": "🍎",
-      "word": "red apple"
-    },
-    {
-      "emoji": "🍘",
-      "word": "rice cracker"
+      "word": "apple"
     },
     {
       "emoji": "🍙",
@@ -1910,11 +1486,7 @@
     },
     {
       "emoji": "🍠",
-      "word": "roasted sweet potato"
-    },
-    {
-      "emoji": "🧧",
-      "word": "red envelope"
+      "word": "sweet potato"
     },
     {
       "emoji": "🎀",
@@ -1922,15 +1494,7 @@
     },
     {
       "emoji": "🎗️",
-      "word": "reminder ribbon"
-    },
-    {
-      "emoji": "🏉",
-      "word": "rugby football"
-    },
-    {
-      "emoji": "🎽",
-      "word": "running shirt"
+      "word": "ribbon"
     },
     {
       "emoji": "👟",
@@ -1938,7 +1502,7 @@
     },
     {
       "emoji": "⛑️",
-      "word": "rescue worker’s helmet"
+      "word": "helmet"
     },
     {
       "emoji": "💍",
@@ -1950,11 +1514,7 @@
     },
     {
       "emoji": "🏮",
-      "word": "red paper lantern"
-    },
-    {
-      "emoji": "🗞️",
-      "word": "rolled-up newspaper"
+      "word": "lantern"
     },
     {
       "emoji": "🧾",
@@ -1962,21 +1522,17 @@
     },
     {
       "emoji": "📍",
-      "word": "round pushpin"
-    },
-    {
-      "emoji": "🪒",
-      "word": "razor"
+      "word": "pushpin"
     },
     {
       "emoji": "🧻",
-      "word": "roll of paper"
+      "word": "toilet paper"
     }
   ],
   "s": [
     {
       "emoji": "🐕‍🦺",
-      "word": "service dog"
+      "word": "dog"
     },
     {
       "emoji": "🦥",
@@ -1999,8 +1555,12 @@
       "word": "sauropod"
     },
     {
+      "emoji": "🦕",
+      "word": "dinosaur"
+    },
+    {
       "emoji": "🐳",
-      "word": "spouting whale"
+      "word": "whale"
     },
     {
       "emoji": "🦭",
@@ -2012,7 +1572,7 @@
     },
     {
       "emoji": "🐚",
-      "word": "spiral shell"
+      "word": "shell"
     },
     {
       "emoji": "🐌",
@@ -2039,14 +1599,6 @@
       "word": "seedling"
     },
     {
-      "emoji": "🌾",
-      "word": "sheaf of rice"
-    },
-    {
-      "emoji": "☘️",
-      "word": "shamrock"
-    },
-    {
       "emoji": "🍓",
       "word": "strawberry"
     },
@@ -2055,20 +1607,8 @@
       "word": "sandwich"
     },
     {
-      "emoji": "🥙",
-      "word": "stuffed flatbread"
-    },
-    {
-      "emoji": "🥘",
-      "word": "shallow pan of food"
-    },
-    {
       "emoji": "🧂",
       "word": "salt"
-    },
-    {
-      "emoji": "🍜",
-      "word": "steaming bowl"
     },
     {
       "emoji": "🍝",
@@ -2088,19 +1628,11 @@
     },
     {
       "emoji": "🍦",
-      "word": "soft ice cream"
-    },
-    {
-      "emoji": "🍧",
-      "word": "shaved ice"
+      "word": "ice cream"
     },
     {
       "emoji": "🍰",
-      "word": "shortcake"
-    },
-    {
-      "emoji": "🍶",
-      "word": "sake"
+      "word": "cake"
     },
     {
       "emoji": "🥄",
@@ -2109,14 +1641,6 @@
     {
       "emoji": "🎇",
       "word": "sparkler"
-    },
-    {
-      "emoji": "✨",
-      "word": "sparkles"
-    },
-    {
-      "emoji": "🏅",
-      "word": "sports medal"
     },
     {
       "emoji": "⚽",
@@ -2135,16 +1659,8 @@
       "word": "sled"
     },
     {
-      "emoji": "🎰",
-      "word": "slot machine"
-    },
-    {
-      "emoji": "♠️",
-      "word": "spade suit"
-    },
-    {
       "emoji": "🪡",
-      "word": "sewing needle"
+      "word": "needle"
     },
     {
       "emoji": "🕶️",
@@ -2163,32 +1679,16 @@
       "word": "socks"
     },
     {
-      "emoji": "🥻",
-      "word": "sari"
-    },
-    {
       "emoji": "🩳",
       "word": "shorts"
     },
     {
       "emoji": "🛍️",
-      "word": "shopping bags"
-    },
-    {
-      "emoji": "🔈",
-      "word": "speaker low volume"
-    },
-    {
-      "emoji": "🔉",
-      "word": "speaker medium volume"
-    },
-    {
-      "emoji": "🔊",
-      "word": "speaker high volume"
+      "word": "sbags"
     },
     {
       "emoji": "🎙️",
-      "word": "studio microphone"
+      "word": "microphone"
     },
     {
       "emoji": "🎷",
@@ -2200,15 +1700,11 @@
     },
     {
       "emoji": "🗒️",
-      "word": "spiral notepad"
-    },
-    {
-      "emoji": "🗓️",
-      "word": "spiral calendar"
+      "word": "notepad"
     },
     {
       "emoji": "📏",
-      "word": "straight ruler"
+      "word": "ruler"
     },
     {
       "emoji": "✂️",
@@ -2224,7 +1720,7 @@
     },
     {
       "emoji": "📡",
-      "word": "satellite antenna"
+      "word": "antenna"
     },
     {
       "emoji": "💉",
@@ -2287,10 +1783,6 @@
     {
       "emoji": "📹",
       "word": "video camera"
-    },
-    {
-      "emoji": "📼",
-      "word": "videocassette"
     }
   ],
   "w": [
@@ -2300,7 +1792,7 @@
     },
     {
       "emoji": "🐃",
-      "word": "water buffalo"
+      "word": "buffalo"
     },
     {
       "emoji": "🪽",
@@ -2316,11 +1808,11 @@
     },
     {
       "emoji": "💮",
-      "word": "white flower"
+      "word": "flower"
     },
     {
       "emoji": "🥀",
-      "word": "wilted flower"
+      "word": "flower"
     },
     {
       "emoji": "🍉",
@@ -2331,36 +1823,20 @@
       "word": "waffle"
     },
     {
-      "emoji": "🍷",
-      "word": "wine glass"
-    },
-    {
-      "emoji": "🎐",
-      "word": "wind chime"
-    },
-    {
       "emoji": "🎁",
-      "word": "wrapped gift"
-    },
-    {
-      "emoji": "🔫",
-      "word": "water pistol"
-    },
-    {
-      "emoji": "👚",
-      "word": "woman’s clothes"
+      "word": "gift"
     },
     {
       "emoji": "👡",
-      "word": "woman’s sandal"
+      "word": "sandal"
     },
     {
       "emoji": "👢",
-      "word": "woman’s boot"
+      "word": "boot"
     },
     {
       "emoji": "👒",
-      "word": "woman’s hat"
+      "word": "hat"
     },
     {
       "emoji": "🗑️",
@@ -2372,7 +1848,7 @@
     },
     {
       "emoji": "🦯",
-      "word": "white cane"
+      "word": "cane"
     },
     {
       "emoji": "🪟",
@@ -2393,10 +1869,6 @@
     {
       "emoji": "🧶",
       "word": "yarn"
-    },
-    {
-      "emoji": "💴",
-      "word": "yen banknote"
     }
   ],
   "z": [
