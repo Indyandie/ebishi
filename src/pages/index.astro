@@ -3,13 +3,22 @@ import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="ebishi">
-  <main class="flex m-auto p-0 w-min">
-    <ul>
-      <li>
-        <a href="./abc">
-          <h1 class="text-4xl text-white my-8 mx-0">🔤&nbsp;ABCs</h1>
-        </a>
-      </li>
-    </ul>
+  <main class="m-auto flex w-min p-0">
+    <nav>
+      <ul class="[&>li>a>h1]:mx-0 [&>li>a>h1]:my-8
+        [&>li>a>h1]:text-4xl
+        [&>li>a>h1]:text-white">
+        <li>
+          <a href="./abc">
+            <h1><b>🔤&nbsp;ABCs</b></h1>
+          </a>
+        </li>
+        <li>
+          <a href="./emojis">
+            <h1><b>🤣&nbsp;Emojis</b></h1>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </main>
 </Layout>
