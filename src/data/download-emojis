@@ -1,3 +1,8 @@
 #!/usr/bin/env zsh
 
-curl -o gemojis.json https://raw.githubusercontent.com/github/gemoji/master/db/emoji.json
+curl -o temp-emojis.json https://raw.githubusercontent.com/github/gemoji/master/db/emoji.json
+
+# format
+bat temp-emojis.json | jq > gemojis.json
+
+rm temp-emojis.json
