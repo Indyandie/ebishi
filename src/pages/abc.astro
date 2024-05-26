@@ -25,23 +25,23 @@ const abc = JSON.parse(JSON.stringify(data))
     exitBtn.classList.add('hidden')
   }
 
+  const exitBtn = document.querySelector('#exit-full-btn')
+  const fullBtn = document.querySelector('#full-btn')
   function isVideoInFullscreen() {
-    if (document.fullscreenEnabbled) {
-      const fullBtn = document.querySelector('#full-btn')
+    if (document.fullscreenEnabled) {
       fullBtn.addEventListener('click', () => {
         setFullscreen()
       })
 
-      const exitBtn = document.querySelector('#exit-full-btn')
       exitBtn.addEventListener('click', () => {
         exitFullscreen()
       })
     } else {
-      const fullBtn = document.querySelector('#full-btn')
       fullBtn.classList.add('hidden')
     }
   }
 
+  isVideoInFullscreen()
   document.body.addEventListener('keydown', (event) => {
     const key = event.keyCode
     const width = window.innerWidth
