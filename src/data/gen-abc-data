@@ -1,0 +1,42 @@
+#!/usr/bin/env zsh
+
+jq '[
+
+    .[] |
+
+    select(
+      .category as $category |
+      [
+          "Flags",
+          "Smileys & Emotion",
+          "Symbols",
+          "People & Body",
+          "Travel & Places"
+      ] |
+      index($category) | not
+    ) |
+
+    select(
+      .emoji and .description and
+      (.description | type == "string") and
+      (.description | length > 0)
+    ) |
+  
+    {emoji: .emoji, word: .description}
+  ] |
+
+
+  map(select(
+      .word | length > 0
+  )) |
+  
+  group_by(.word | .[0:1]) |
+
+  
+  map({
+    key: .[0].word[0:1] |
+    ascii_downcase, value: .
+  }) |
+    sort |
+  from_entries' \
+    gemojis.json >abc-emoji-list.json
