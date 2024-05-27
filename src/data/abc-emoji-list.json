@@ -743,10 +743,6 @@
       "word": "falafel"
     },
     {
-      "emoji": "🍴",
-      "word": "fork and knife"
-    },
-    {
       "emoji": "🎆",
       "word": "fireworks"
     },
@@ -1376,7 +1372,7 @@
   "p": [
     {
       "emoji": "🎨",
-      "word": "palette"
+      "word": "paint"
     },
     {
       "emoji": "🫑",
@@ -1922,6 +1918,10 @@
     }
   ],
   "t": [
+    {
+      "emoji": "🍴",
+      "word": "tableware"
+    },
     {
       "emoji": "🎟️",
       "word": "tickets"
