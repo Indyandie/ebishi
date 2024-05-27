@@ -5,21 +5,39 @@
   let emoji
   let word
   let char
+  const letterLength = letter.length
+  const shuffledIndex = []
+
+  if (letterLength > 1) {
+    for (let i = 0; i < letterLength; i++) {
+      shuffledIndex.push(i)
+    }
+
+    shuffledIndex.sort(() => Math.random() - 0.5)
+  } else {
+    shuffledIndex.push(0)
+  }
+
   let index = 0
 
-  const updateLetter = (letter) => {
+  function updateLetter(letter) {
     emoji = letter.emoji
     word = letter.word
     char = word[0]
   }
 
   function toggleIndex() {
-    if (index === letter.length - 1) {
-      index = 0
-    } else {
-      index += 1
+    const letterLength = letter.length
+
+    if (letterLength > 1) {
+      if (index === letterLength - 1) {
+        index = 0
+      } else {
+        index += 1
+      }
+
+      updateLetter(letter[shuffledIndex[index]])
     }
-    updateLetter(letter[index])
   }
 
   const minSwipeChange = 44
@@ -78,7 +96,7 @@
     }
   }
 
-  updateLetter(letter[index])
+  updateLetter(letter[shuffledIndex[index]])
 </script>
 
 <!-- -webkit-touch-callout: none; /* iOS Safari */ -->
