@@ -103,26 +103,40 @@
 <section
   class="flex h-screen
     w-screen touch-pan-x
-    select-none flex-col
-    items-center
+    select-none flex-col items-center
     justify-center
     bg-[#494B7A]
     text-[#FFF]
-    transition-all ease-in"
+    transition-all
+    ease-in landscape:flex-row"
   on:touchstart|passive={swipeCard}>
-  <h1 class="m-0 mb-6 text-9xl capitalize">
+  <h1
+    class="m-0 mb-6
+    text-center
+    align-middle text-8xl capitalize
+    lg:text-[220px]
+    landscape:mb-0
+    landscape:mr-10 landscape:w-1/4">
     {char.repeat(2)}
   </h1>
   <!-- height: 180px; -->
   <button
     class="m-0 flex
-    text-[180px]
-    transition-all
-     active:scale-50"
+     h-2/4
+    w-screen items-center
+    justify-center
+    text-[120px]
+    transition-all active:scale-50 lg:text-[200px]
+    landscape:w-1/3"
     on:click={toggleIndex}>
     <figure>
       {emoji}
-      <figcaption class="mt-6 text-center text-4xl">{word}</figcaption>
+      <figcaption
+        class="mt-4
+        text-center text-4xl
+        lg:text-6xl landscape:mt-0">
+        {word}
+      </figcaption>
     </figure>
   </button>
 </section>
