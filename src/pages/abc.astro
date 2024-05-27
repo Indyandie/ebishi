@@ -50,11 +50,9 @@ const abc = JSON.parse(JSON.stringify(data))
 
     console.log(key)
     if (key == 39 && multiplier < 25) {
-      setFullscreen()
       const moveScroll = (multiplier + 1) * width
       document.body.scrollTo(moveScroll, 0)
     } else if (key == 37 && multiplier > 0) {
-      setFullscreen()
       const moveScroll = (multiplier - 1) * width
       document.body.scrollTo(moveScroll, 0)
     }
