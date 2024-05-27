@@ -1,0 +1,99 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/CardABC.svelte'
+import '../styles/fontawesome/fontawesome.css'
+import '../styles/fontawesome/solid.css'
+
+const { title, test, data } = Astro.props
+---
+
+<script>
+  function setFullscreen() {
+    if (!document.fullscreen) {
+      document.body.requestFullscreen().catch((error) => {
+        console.log.textContent += `${error}\n`
+      })
+      screen.orientation.lock('any')
+      exitBtn.classList.remove('hidden')
+      fullBtn.classList.add('hidden')
+      adjustScroll()
+    }
+  }
+
+  function exitFullscreen() {
+    document.exitFullscreen()
+    fullBtn.classList.remove('hidden')
+    exitBtn.classList.add('hidden')
+    adjustScroll()
+  }
+
+  const exitBtn = document.querySelector('#exit-full-btn')
+  const fullBtn = document.querySelector('#full-btn')
+
+  function fullscreenSupport() {
+    if (document.fullscreenEnabled) {
+      fullBtn.classList.remove('hidden')
+      fullBtn.addEventListener('click', () => {
+        setFullscreen()
+      })
+
+      exitBtn.addEventListener('click', () => {
+        exitFullscreen()
+      })
+    }
+  }
+
+  function scrollX(x) {
+    document.body.scrollTo(x, 0)
+  }
+
+  function adjustScroll(key) {
+    let width = window.innerWidth
+    let scroll = document.body.scrollLeft
+    let multiplier = Math.round(scroll / width)
+
+    if (key) {
+      if (key == 37 && multiplier > 0) {
+        multiplier = multiplier - 1
+        const moveScroll = multiplier * width
+        scrollX(moveScroll)
+      } else if (key == 39 && multiplier < 25) {
+        multiplier = multiplier + 1
+        const moveScroll = multiplier * width
+        scrollX(moveScroll)
+      }
+    }
+
+    // Adjust scroll
+    setTimeout(() => {
+      width = window.innerWidth
+      scroll = document.body.scrollLeft
+      const remainder = scroll % width
+      if (remainder > 0) {
+        const moveScroll = multiplier * width
+        scrollX(moveScroll)
+      }
+    }, '250')
+  }
+
+  document.body.addEventListener('keydown', (event) => {
+    const key = event.keyCode
+    adjustScroll(key)
+  })
+
+  fullscreenSupport()
+</script>
+
+<Layout title={title}>
+  <aside class="fixed flex w-screen items-end justify-end p-4">
+    <button id="full-btn" class="text-5lg hidden min-h-[44px] min-w-[44px] text-white">
+      <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+    </button>
+    <button id="exit-full-btn" class="text-5lg hidden min-w-[44px] text-white">
+      <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
+    </button>
+  </aside>
+  <main class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all">
+    <slot />
+  </main>
+</Layout>

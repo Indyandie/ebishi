@@ -1,29 +1,12 @@
 ---
-import Layout from '../layouts/Layout.astro'
+import Layout from '../layouts/CardLayout.astro'
 import Card from '../components/CardEmojis.svelte'
 import data from '../data/emoji-list-alpha.json'
-const abc = JSON.parse(JSON.stringify(data))
+const emojis = JSON.parse(JSON.stringify(data))
 ---
 
-<script>
-  window.addEventListener('keydown', (event) => {
-    const key = event.keyCode
-    const width = window.innerWidth
-    const scroll = document.body.scrollLeft
-    const multiplier = Math.round(scroll / width)
-
-    if (key == 39 && multiplier < 25) {
-      const moveScroll = (multiplier + 1) * width
-      document.body.scrollTo(moveScroll, 0)
-    } else if (key == 37 && multiplier > 0) {
-      const moveScroll = (multiplier - 1) * width
-      document.body.scrollTo(moveScroll, 0)
-    }
-  })
-</script>
-
-<Layout title="abc">
+<Layout title="emojis">
   <main class="m-auto flex w-min touch-none p-0">
-    {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
+    {Object.keys(emojis).map((name, i) => <Card client:visible idx={i} letter={emojis[name]} />)}
   </main>
 </Layout>
