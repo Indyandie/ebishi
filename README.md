@@ -8,14 +8,14 @@ My little one likes to play with the phone whenever they can snatch it. So, I to
 
 ## The Plan
 
-- [ ] [🔤 ABCs](https://indyandie.github.io/ebishi/abc/)
-  - [ ] +words/emojis
+- [x] [🔤 ABCs](https://indyandie.github.io/ebishi/abc/)
+  - [x] +words/emojis
+  - [ ] use gemoji aliases
 - [ ] 🎨 Colors
 - [ ] 🔢 Numbers
 - [ ] 🐘 Animals
 - [ ] 🍁 Seasons/Weather
 - [ ] 🌎 Planets
 - [ ] Landing Page
-- [ ] Use Twemojis
+- [ ] Use [Twemoji](https://github.com/twitter/twemoji)
 - [ ] Native App
-
