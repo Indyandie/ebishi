@@ -100,11 +100,11 @@
     class="m-0 flex
     text-[180px]
     transition-all
-    delay-100 active:scale-50"
+     active:scale-50"
     on:click={toggleIndex}>
-    {emoji}
+    <figure>
+      {emoji}
+      <figcaption class="mt-6 text-center text-4xl">{word}</figcaption>
+    </figure>
   </button>
-  <p class="mt-6 text-center text-4xl">
-    {word}
-  </p>
 </section>
