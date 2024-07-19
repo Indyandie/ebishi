@@ -47,7 +47,7 @@ const { title, test, data } = Astro.props
     document.body.scrollTo(x, 0)
   }
 
-  function adjustScroll(key) {
+  function adjustScroll(key = null) {
     let width = window.innerWidth
     let scroll = document.body.scrollLeft
     let multiplier = Math.round(scroll / width)
