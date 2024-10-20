@@ -1,9 +1,9 @@
 {
   "version": "4",
   "specifiers": {
-    "npm:@astrojs/svelte@^5.7.0": "5.7.2_astro@4.16.6__@babel+core@7.25.8__vite@5.4.9__zod@3.23.8_svelte@4.2.5_typescript@5.6.3",
-    "npm:@astrojs/tailwind@^5.1.0": "5.1.2_astro@4.16.6__@babel+core@7.25.8__vite@5.4.9__zod@3.23.8_tailwindcss@3.4.14__postcss@8.4.47_postcss@8.4.47",
-    "npm:astro@^4.12.1": "4.16.6_@babel+core@7.25.8_vite@5.4.9_zod@3.23.8",
+    "npm:@astrojs/svelte@^5.7.2": "5.7.2_astro@4.16.6__@babel+core@7.25.8__vite@5.4.9__zod@3.23.8_svelte@4.2.5_typescript@5.6.3",
+    "npm:@astrojs/tailwind@^5.1.2": "5.1.2_astro@4.16.6__@babel+core@7.25.8__vite@5.4.9__zod@3.23.8_tailwindcss@3.4.14__postcss@8.4.47_postcss@8.4.47",
+    "npm:astro@^4.16.6": "4.16.6_@babel+core@7.25.8_vite@5.4.9_zod@3.23.8",
     "npm:prettier-plugin-astro@0.14": "0.14.1",
     "npm:prettier-plugin-svelte@^3.2.3": "3.2.7_prettier@3.3.3_svelte@4.2.5",
     "npm:prettier-plugin-tailwindcss@~0.5.14": "0.5.14_prettier@3.3.3_prettier-plugin-astro@0.14.1_prettier-plugin-svelte@3.2.7__prettier@3.3.3__svelte@4.2.5_svelte@4.2.5",
@@ -2926,9 +2926,9 @@
   "workspace": {
     "packageJson": {
       "dependencies": [
-        "npm:@astrojs/svelte@^5.7.0",
-        "npm:@astrojs/tailwind@^5.1.0",
-        "npm:astro@^4.12.1",
+        "npm:@astrojs/svelte@^5.7.2",
+        "npm:@astrojs/tailwind@^5.1.2",
+        "npm:astro@^4.16.6",
         "npm:prettier-plugin-astro@0.14",
         "npm:prettier-plugin-svelte@^3.2.3",
         "npm:prettier-plugin-tailwindcss@~0.5.14",
