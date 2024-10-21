@@ -29,9 +29,13 @@ jobs:
         with:
           deno-version: v2.x
       - name: Run install
-        run: deno install
+        run: deno install --allow-scripts
       - name: Run Build
         run: deno run -A build
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
 
   deploy:
     needs: build
