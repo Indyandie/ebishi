@@ -21,19 +21,15 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Setup repo
-        uses: actions/checkout@v4
-
+      - name: Checkout your repository using git
+        uses: actions/checkout@v2
       - name: Setup Deno
         uses: denoland/setup-deno
         with:
           deno-version: v2.x
-
       - name: Run install
         run: deno install
-
       - name: Run Build
         run: deno run -A build
 
