@@ -33,7 +33,7 @@ jobs:
       - name: Run Build
         run: deno run -A build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           path: ./dist/
 
