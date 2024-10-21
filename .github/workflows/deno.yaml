@@ -34,15 +34,15 @@ jobs:
         run: deno run -A build
       - name: Upload artifact
         id: deployment
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v3
         with:
           name: github-pages
-          path: ./dist/
+          path: "./dist/"
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    name: Deploy
+    # name: Deploy
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
