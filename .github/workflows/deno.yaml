@@ -36,6 +36,7 @@ jobs:
         id: deployment
         uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: ./dist/
 
   deploy:
