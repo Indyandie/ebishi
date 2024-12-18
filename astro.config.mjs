@@ -8,12 +8,4 @@ export default defineConfig({
   site: 'https://indyandie.github.io/',
   base: 'ebishi/',
   integrations: [svelte(), tailwind()],
-  vite: {
-    server: {
-      watch: {
-        useFsEvents: false,
-        usePolling: true,
-      },
-    },
-  },
 })
