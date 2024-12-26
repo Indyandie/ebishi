@@ -6,16 +6,38 @@ export interface Props {
 const { title } = Astro.props
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="overflow-y-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, height=device-height,initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/ebishi/favicon.ico" />
+
+    <!-- IOS/Android -->
+    <link rel="apple-touch-icon" sizes="192x192" href="/ebishi/apple-touch-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/ebishi/apple-touch-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ebishi/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/ebishi/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ebishi/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/ebishi/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ebishi/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/ebishi/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ebishi/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/ebishi/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/ebishi/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/ebishi/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" href="/ebishi/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="/ebishi/apple-touch-icon.png">
+
+    <!-- Chrome Android -->
+    <link rel="shortcut icon" sizes="196x196" href="/ebishi/favicon-196.png">
+
+    <!-- Safari 9+ -->
+    <link rel="mask-icon" href="/ebishi/favicon.svg" color="#ffffff">
+
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😉</text></svg>" />
   </head>
   <body class="m-0 h-screen overflow-y-hidden bg-[#333] font-sans">
     <slot />
