@@ -5,7 +5,9 @@ import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://indyandie.github.io/',
-  base: 'ebishi/',
-  integrations: [svelte(), tailwind()],
+  site: 'https://ebishi.indieandy.cc/',
+  integrations: [
+    svelte(),
+    tailwind(),
+  ],
 })
