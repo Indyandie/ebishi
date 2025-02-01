@@ -84,12 +84,17 @@ const { title, test, data } = Astro.props
   fullscreenSupport()
 </script>
 
-<Layout title={title}>
-  <aside class="fixed flex w-screen items-end justify-end p-4">
-    <button id="full-btn" class="text-5lg hidden min-h-[44px] min-w-[44px] text-white">
+<Layout {title}>
+  <aside class="fixed flex w-screen justify between p-4">
+    <a href="/">
+      <button class="text-5lg min-h-[44px] min-w-[44px] text-white">
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </button>
+    </a>
+    <button id="full-btn" class="text-5lg ml-auto hidden min-h-[44px] min-w-[44px] text-white">
       <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
     </button>
-    <button id="exit-full-btn" class="text-5lg hidden min-w-[44px] text-white">
+    <button id="exit-full-btn" class="text-5lg ml-auto hidden min-w-[44px] text-white">
       <i class="fa-solid fa-down-left-and-up-right-to-center"></i>
     </button>
   </aside>
