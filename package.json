@@ -11,6 +11,10 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.3",
+    "tailwindcss": "^4.0.3"
+  },
   "devDependencies": {
     "@astrojs/svelte": "7.0.4",
     "@astrojs/tailwind": "^6.0.0",
@@ -18,7 +22,6 @@
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-svelte": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "svelte": "^5.19.6",
-    "tailwindcss": "^4.0.3"
+    "svelte": "^5.19.6"
   }
 }
