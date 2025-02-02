@@ -6,5 +6,7 @@ const abc = JSON.parse(JSON.stringify(data))
 ---
 
 <Layout title="abc">
-  {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
+  <main class="m-auto flex w-min touch-none p-0" transition:name="hero" transition:animate="slide">
+    {Object.keys(abc).map((name, i) => <Card client:visible idx={i} letter={abc[name]} />)}
+  </main>
 </Layout>

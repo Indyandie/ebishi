@@ -8,80 +8,82 @@ const { title, test, data } = Astro.props
 ---
 
 <script>
-  function setFullscreen() {
-    if (!document.fullscreen) {
-      document.body.requestFullscreen().catch((error) => {
-        console.log.textContent += `${error}\n`
-      })
-      screen.orientation.lock('any')
-      exitBtn.classList.remove('hidden')
-      fullBtn.classList.add('hidden')
+  document.addEventListener('astro:page-load', () => {
+    function setFullscreen() {
+      if (!document.fullscreen) {
+        document.body.requestFullscreen().catch((error) => {
+          console.log.textContent += `${error}\n`
+        })
+        screen.orientation.lock('any')
+        exitBtn.classList.remove('hidden')
+        fullBtn.classList.add('hidden')
+        adjustScroll()
+      }
+    }
+
+    function exitFullscreen() {
+      document.exitFullscreen()
+      fullBtn.classList.remove('hidden')
+      exitBtn.classList.add('hidden')
       adjustScroll()
     }
-  }
 
-  function exitFullscreen() {
-    document.exitFullscreen()
-    fullBtn.classList.remove('hidden')
-    exitBtn.classList.add('hidden')
-    adjustScroll()
-  }
+    const exitBtn = document.querySelector('#exit-full-btn')
+    const fullBtn = document.querySelector('#full-btn')
 
-  const exitBtn = document.querySelector('#exit-full-btn')
-  const fullBtn = document.querySelector('#full-btn')
+    function fullscreenSupport() {
+      if (document.fullscreenEnabled) {
+        fullBtn.classList.remove('hidden')
+        fullBtn.addEventListener('click', () => {
+          setFullscreen()
+        })
 
-  function fullscreenSupport() {
-    if (document.fullscreenEnabled) {
-      fullBtn.classList.remove('hidden')
-      fullBtn.addEventListener('click', () => {
-        setFullscreen()
-      })
-
-      exitBtn.addEventListener('click', () => {
-        exitFullscreen()
-      })
-    }
-  }
-
-  function scrollX(x) {
-    document.body.scrollTo(x, 0)
-  }
-
-  function adjustScroll(key = null) {
-    let width = window.innerWidth
-    let scroll = document.body.scrollLeft
-    let multiplier = Math.round(scroll / width)
-
-    if (key) {
-      if (key == 37 && multiplier > 0) {
-        multiplier = multiplier - 1
-        const moveScroll = multiplier * width
-        scrollX(moveScroll)
-      } else if (key == 39 && multiplier < 28) {
-        multiplier = multiplier + 1
-        const moveScroll = multiplier * width
-        scrollX(moveScroll)
+        exitBtn.addEventListener('click', () => {
+          exitFullscreen()
+        })
       }
     }
 
-    // Adjust scroll
-    setTimeout(() => {
-      width = window.innerWidth
-      scroll = document.body.scrollLeft
-      const remainder = scroll % width
-      if (remainder > 0) {
-        const moveScroll = multiplier * width
-        scrollX(moveScroll)
-      }
-    }, 250)
-  }
+    function scrollX(x) {
+      document.body.scrollTo(x, 0)
+    }
 
-  document.body.addEventListener('keydown', (event) => {
-    const key = event.keyCode
-    adjustScroll(key)
+    function adjustScroll(key = null) {
+      let width = window.innerWidth
+      let scroll = document.body.scrollLeft
+      let multiplier = Math.round(scroll / width)
+
+      if (key) {
+        if (key == 37 && multiplier > 0) {
+          multiplier = multiplier - 1
+          const moveScroll = multiplier * width
+          scrollX(moveScroll)
+        } else if (key == 39 && multiplier < 28) {
+          multiplier = multiplier + 1
+          const moveScroll = multiplier * width
+          scrollX(moveScroll)
+        }
+      }
+
+      // Adjust scroll
+      setTimeout(() => {
+        width = window.innerWidth
+        scroll = document.body.scrollLeft
+        const remainder = scroll % width
+        if (remainder > 0) {
+          const moveScroll = multiplier * width
+          scrollX(moveScroll)
+        }
+      }, 250)
+    }
+
+    document.body.addEventListener('keydown', (event) => {
+      const key = event.keyCode
+      adjustScroll(key)
+    })
+
+    fullscreenSupport()
   })
-
-  fullscreenSupport()
 </script>
 
 <Layout {title}>
