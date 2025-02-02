@@ -87,7 +87,10 @@ const { title, test, data } = Astro.props
 </script>
 
 <Layout {title}>
-  <aside class="fixed flex w-screen justify between p-4">
+  <aside
+    transition:animate="slide"
+    class="fixed flex w-screen justify between p-4"
+  >
     <a href="/">
       <button class="text-5lg min-h-[44px] min-w-[44px] text-white">
         <i class="fa-solid fa-arrow-left-long"></i>
@@ -100,7 +103,10 @@ const { title, test, data } = Astro.props
       <i class="fa-solid fa-compress"></i>
     </button>
   </aside>
-  <main class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all">
+  <main
+    class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all"
+    transition:animate="slide"
+  >
     <slot />
   </main>
 </Layout>

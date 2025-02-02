@@ -6,7 +6,5 @@ const emojis = JSON.parse(JSON.stringify(data))
 ---
 
 <Layout title="emojis" >
-  <main class="m-auto flex w-min touch-none p-0" transition:name="hero" transition:animate="slide">
     {Object.keys(emojis).map((name, i) => <Card client:visible idx={i} letter={emojis[name]} />)}
-  </main>
 </Layout>
