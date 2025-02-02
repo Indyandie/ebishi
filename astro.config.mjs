@@ -10,5 +10,11 @@ export default defineConfig({
   ],
   vite: {
     plugins: [tailwindcss()],
+    server: {
+      watch: {
+        useFsEvents: false,
+        usePolling: true,
+      },
+    },
   },
 })
