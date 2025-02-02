@@ -88,7 +88,6 @@
     select-none flex-col
     items-center
     justify-center
-    bg-[#333]
     text-[#FFF]
     transition-all delay-[2s] ease-in"
   on:touchstart|passive={swipeCard}>

@@ -101,11 +101,10 @@
 
 <!-- -webkit-touch-callout: none; /* iOS Safari */ -->
 <section
-  class="flex h-screen
+  class="flex h-full
     w-screen touch-pan-x
     select-none flex-col items-center
     justify-center
-    bg-[#494B7A]
     text-[#FFF]
     transition-all
     ease-in landscape:flex-row"

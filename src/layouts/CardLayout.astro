@@ -4,16 +4,16 @@ import Card from '../components/CardABC.svelte'
 import '../styles/fontawesome/fontawesome.css'
 import '../styles/fontawesome/solid.css'
 
-const { title, test, data } = Astro.props
+const { title, test, data, bgColor } = Astro.props
 ---
 
 <script>
   function setFullscreen() {
     if (!document.fullscreen) {
       document.body.requestFullscreen().catch((error) => {
-        console.log.textContent += `${error}\n`
+        console.log(error)
       })
-      screen.orientation.lock('any')
+      // screen.orientation.lock('any')
       exitBtn.classList.remove('hidden')
       fullBtn.classList.add('hidden')
       adjustScroll()
@@ -88,26 +88,26 @@ const { title, test, data } = Astro.props
 </script>
 
 <Layout {title}>
-  <aside
-    transition:animate="slide"
-    class="fixed flex w-screen justify between p-4"
-  >
+  <header class="sticky left-0 top-0 flex w-screen h-auto justify-between px-1">
     <a href="/">
       <button class="text-5lg min-h-[44px] min-w-[44px] text-white">
         <i class="fa-solid fa-arrow-left-long"></i>
       </button>
     </a>
-    <button id="full-btn" class="text-5lg ml-auto hidden min-h-[44px] min-w-[44px] text-white">
+    <button id="full-btn" class="text-5lg hidden ml-auto min-h-[44px] min-w-[44px] text-white">
       <i class="fa-solid fa-expand"></i>
     </button>
     <button id="exit-full-btn" class="text-5lg ml-auto hidden min-w-[44px] text-white">
       <i class="fa-solid fa-compress"></i>
     </button>
-  </aside>
-  <main
-    class="m-auto flex w-min touch-none p-0 transition-all [&>*]:transition-all"
-    transition:animate="slide"
-  >
+  </header>
+  <main class="m-auto flex h-dvh w-min touch-none p-0 transition-all [&>*]:transition-all">
     <slot />
   </main>
 </Layout>
+
+<style define:vars={{ bgColor }}>
+  header, main {
+    background: var(--bgColor);
+  }
+</style>

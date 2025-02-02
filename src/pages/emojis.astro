@@ -5,6 +5,6 @@ import data from '../data/emoji-list-alpha.json'
 const emojis = JSON.parse(JSON.stringify(data))
 ---
 
-<Layout title="emojis" >
+<Layout title="emojis" bgColor="#272727" >
     {Object.keys(emojis).map((name, i) => <Card client:visible idx={i} letter={emojis[name]} />)}
 </Layout>
