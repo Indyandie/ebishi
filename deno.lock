@@ -5,6 +5,7 @@
     "npm:@astrojs/tailwind@6": "6.0.0_astro@5.2.3__vite@6.0.11__zod@3.24.1_tailwindcss@3.4.17__postcss@8.5.1_postcss@8.5.1",
     "npm:@tailwindcss/vite@^4.0.3": "4.0.3_vite@6.0.11__lightningcss@1.29.1_lightningcss@1.29.1",
     "npm:astro@^5.2.3": "5.2.3_vite@6.0.11_zod@3.24.1",
+    "npm:htmx.org@2.0.4": "2.0.4",
     "npm:prettier-plugin-astro@0.14": "0.14.1",
     "npm:prettier-plugin-svelte@^3.3.3": "3.3.3_prettier@3.3.3_svelte@5.19.6__acorn@8.14.0",
     "npm:prettier-plugin-tailwindcss@~0.6.11": "0.6.11_prettier@3.3.3_prettier-plugin-astro@0.14.1_prettier-plugin-svelte@3.3.3__prettier@3.3.3__svelte@5.19.6___acorn@8.14.0_svelte@5.19.6__acorn@8.14.0",
@@ -1305,6 +1306,9 @@
     },
     "html-void-elements@3.0.0": {
       "integrity": "sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg=="
+    },
+    "htmx.org@2.0.4": {
+      "integrity": "sha512-HLxMCdfXDOJirs3vBZl/ZLoY+c7PfM4Ahr2Ad4YXh6d22T5ltbTXFFkpx9Tgb2vvmWFMbIc3LqN2ToNkZJvyYQ=="
     },
     "http-cache-semantics@4.1.1": {
       "integrity": "sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ=="
@@ -2875,6 +2879,7 @@
         "npm:@astrojs/tailwind@6",
         "npm:@tailwindcss/vite@^4.0.3",
         "npm:astro@^5.2.3",
+        "npm:htmx.org@2.0.4",
         "npm:prettier-plugin-astro@0.14",
         "npm:prettier-plugin-svelte@^3.3.3",
         "npm:prettier-plugin-tailwindcss@~0.6.11",
