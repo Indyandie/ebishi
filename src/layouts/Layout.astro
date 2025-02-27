@@ -35,11 +35,13 @@ const { title } = Astro.props
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     <!-- <ClientRouter /> -->
-    <script is:inline>
+    <script>
       import 'htmx.org'
     </script>
   </head>
-  <body class="m-0 h-screen overflow-y-hidden bg-[#333] font-sans" hx-boost="true">
+  <body
+    class="m-0 h-screen overflow-y-hidden bg-[#333] font-sans"
+  >
     <slot />
   </body>
 </html>

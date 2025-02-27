@@ -31,18 +31,17 @@ const { title, test, data, bgColor } = Astro.props
 
   const exitBtn = document.querySelector('#exit-full-btn')
   const fullBtn = document.querySelector('#full-btn')
+  const fullBool = document.fullscreenEnabled
 
   function fullscreenSupport() {
-    if (document.fullscreenEnabled) {
-      fullBtn.classList.remove('hidden')
-      fullBtn.addEventListener('click', () => {
-        setFullscreen()
-      })
+    fullBtn.classList.remove('hidden')
+    fullBtn.addEventListener('click', () => {
+      setFullscreen()
+    })
 
-      exitBtn.addEventListener('click', () => {
-        exitFullscreen()
-      })
-    }
+    exitBtn.addEventListener('click', () => {
+      exitFullscreen()
+    })
   }
 
   function scrollX(x) {
@@ -84,20 +83,11 @@ const { title, test, data, bgColor } = Astro.props
   })
 
   fullscreenSupport()
-
-  // play nice with hx-boost
-  document.body.addEventListener('htmx:afterSwap', () => {
-    fullscreenSupport()
-  })
-
-  // view transitions
-  // document.addEventListener('astro:page-load', () => {
-  // })
 </script>
 
 <Layout {title}>
-  <header class="sticky left-0 top-0 flex w-screen h-auto justify-between px-1" transition:animate="slide">
-    <a href="/" data-astro-reload>
+  <header class="sticky left-0 top-0 flex w-screen h-auto justify-between px-1">
+    <a href="/">
       <button class="text-5lg min-h-[44px] min-w-[44px] text-white">
         <i class="fa-solid fa-arrow-left-long"></i>
       </button>
