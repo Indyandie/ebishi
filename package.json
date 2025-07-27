@@ -12,14 +12,14 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/svelte": "7.1.0",
+    "@astrojs/tailwind": "6.0.2",
     "@tailwindcss/vite": "^4.0.3",
+    "astro": "5.12.3",
     "htmx.org": "2.0.4",
     "tailwindcss": "^4.0.3"
   },
   "devDependencies": {
-    "@astrojs/svelte": "7.0.4",
-    "@astrojs/tailwind": "^6.0.0",
-    "astro": "^5.2.3",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-svelte": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
